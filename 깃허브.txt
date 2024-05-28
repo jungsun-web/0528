@@ -1,0 +1,83 @@
+
+github.com: 깃저장소 가입하기
+
+-sun5sun@hanmail.net 계정
+첫 대문자(비번)
+
+레포지토리 주소
+https://github.com/jungsun-web/main.git
+
+
+----------------------------------
+깃 설치하기(인터넷으로 올려주는 역할)
+구글 검색 :gitbash -64비트 윈도우 용
+
+
+1. 깃-환경설정
+git config --global user.name "jungsun"
+git config --global user.emai "sun5sun@hanmail.net"
+
+git config --list  (리스트)
+
+
+2. 프로젝트 올리기  (비주얼스튜디오코드-터미널에서 가능)
+
+1. git init   : 초기화
+2. git add . (모든 파일) or git add index.html(파일 하나)
+
+3. git status (상태를 알려줌, 필수 아님)
+
+4. 히스토리 만들기
+  git  commit -m "first"
+
+
+5. 연결하기
+  git remote add orgin "깃허브 경로"  https://github.com/jungsun-web/0528.git
+  git remote -v         : 연결되었나 확인
+
+
+6. git push orgin main
+
+7. 깃 새로 고침
+
+-----------
+새로 업뎃(추가하는 작업에서 init필요없음)
+git add .
+git push orgin main
+
+
+-----------------------팀프로젝트 하는 법
+
+1. git clone "레포지토리주소"
+2. git checkout -b 브렌치이름
+3. git add .
+ git commit -m "first"
+git pust origin 브렌치이름
+
+4. 마스터 브렌치에 소스가져오기
+git pull orgin main
+5. 브렌치끼리 이동 
+git checkout 브렌치이름
+
+
+
+------------새 레포지토리에 넣기
+echo "# 0528" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jungsun-web/0528.git
+git push -u origin main
+
+
+---------기존 레포지토리
+
+git remote add origin https://github.com/jungsun-web/0528.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
